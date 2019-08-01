@@ -1,0 +1,15 @@
+{
+  "analyzer_name": "r2c/buffer-finder",
+  "author_name": "your name, optionally",
+  "author_email": "your email, optionally",
+  "version": "1.0.0",
+  "spec_version": "1.2.0",
+  "dependencies": {
+    "r2c/typed-ast": "1.1.0"
+  },
+  "type": "commit",
+  "output": {
+    "type": "json"
+  },
+  "deterministic": true
+}
