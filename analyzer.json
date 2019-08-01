@@ -1,5 +1,5 @@
 {
-  "analyzer_name": "r2c/buffer-finder",
+  "analyzer_name": "r2c/<a-unique-name-here>/buffer-finder",
   "author_name": "your name, optionally",
   "author_email": "your email, optionally",
   "version": "1.0.0",
