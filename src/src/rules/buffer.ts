@@ -6,7 +6,7 @@ import { NominativeType, TypeKind } from "stadt";
 // Checks for unsafe usage of the Buffer API, i.e. `new Buffer()`,
 export const rule: Rule = {
   create(context: Context) {
-    function checkConstructor(node: estree.CallExpression) {
+    function checkConstructor(node: estree.NewExpression) {
       /*
         YOUR CODE GOES HERE!
         Make sure to only set the checkId when Buffer is called with a single number argument!
