@@ -7,20 +7,23 @@ import { NominativeType, TypeKind } from "stadt";
 export const rule: Rule = {
   create(context: Context) {
     function checkConstructor(node: estree.NewExpression) {
-      /*
-        YOUR CODE GOES HERE!
-        Make sure to only set the checkId when Buffer is called with a single number argument!
-      */
+      const checkId = "buffer_constructor_number"
       
-      const checkId: string | undefined = undefined;
-      if (checkId === undefined) {
+      if (!(node.callee.type == "Identifier" && node.callee.name == "Buffer")) {
         return;
       }
 
+      /*
+        YOUR CODE GOES HERE!
+        Make sure to only report when Buffer is called with a non-literal number argument!
+      */
+ 
       context.report({
         node: node,
         checkId: checkId
       });
+      
+      
     }
 
     return {
