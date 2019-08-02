@@ -1,7 +1,6 @@
 import * as estree from "estree";
 import * as walker from "estree-walker";
 import * as buffer from "./buffer";
-import * as nonLiteralRequire from "./non-literal-require";
 import * as stadt from "stadt";
 
 // The API design here is intentionally patterned after a simplified version of
@@ -65,7 +64,6 @@ export function possibleTypes(ty: stadt.Type): stadt.Type[] {
 }
 
 export const all: ReadonlyArray<Rule> = [
-  nonLiteralRequire.rule,
   buffer.rule,
 ];
 

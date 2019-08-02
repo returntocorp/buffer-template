@@ -22,8 +22,6 @@ export const rule: Rule = {
         node: node,
         checkId: checkId
       });
-      
-      
     }
 
     return {
