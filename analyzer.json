@@ -1,5 +1,5 @@
 {
-  "analyzer_name": "defcon/<unique-name-here>-buffer-finder",
+  "analyzer_name": "defcon/some-unique-name-here-buffer-finder",
   "author_name": "your name, optionally",
   "author_email": "your email, optionally",
   "version": "1.0.0",
