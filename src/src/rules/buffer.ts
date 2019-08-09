@@ -12,7 +12,7 @@ export const rule: Rule = {
     create(context: Context) {
     return {
       NewExpression(node: estree.NewExpression) {
-        const checkId = "buffer_constructor_number";
+        const checkId = "bad_buffer_constructor";
       
         if (!(isBuffer(node.callee))) {
           return;
